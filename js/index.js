@@ -46,10 +46,8 @@ async function searchMovie(keyword) {
 const searchForm = document.querySelector("#search_form");
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const keyword = event.target.children[0].value;
+  const keyword = event.target.children[0].value.toLowerCase();
   searchMovie(keyword);
 });
-
-await searchMovie();
 
 getpopularTop20Moviews();
