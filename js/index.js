@@ -1,12 +1,11 @@
-// SEARCH API
-// comst search_key = `https://api.themoviedb.org/3/search/movie?api_key=${MY_API_KEY}&query=${searchKeyword}&include_adult=false&language=ko-KR&page=1`
-
 // API
 const MY_API_KEY = `5d59af4f23d0d20dbd878aad8ac9a2fd`;
 
 const API_URL = `https://api.themoviedb.org/3/movie/popular?`;
 
 const IMAGE_URL = `https://image.tmdb.org/t/p/w1080`;
+
+// SEARCH API = `https://api.themoviedb.org/3/search/movie?api_key=${MY_API_KEY}&query=${searchKeyword}&include_adult=false&language=ko-KR&page=1`
 
 let popularTop20Document = document.querySelector(".most-popular");
 
