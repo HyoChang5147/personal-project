@@ -34,6 +34,7 @@ const getpopularTop20Moviews = async () => {
   movieCardDom(results);
 };
 
+// API 검색기능
 async function searchMovie(keyword) {
   const response = await fetch(
     `https://api.themoviedb.org/3/search/movie?api_key=${MY_API_KEY}&query=${keyword}&include_adult=false&language=ko-KR&page=1`
@@ -49,6 +50,6 @@ searchForm.addEventListener("submit", (event) => {
   searchMovie(keyword);
 });
 
-searchMovie();
+await searchMovie();
 
 getpopularTop20Moviews();
