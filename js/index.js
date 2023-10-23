@@ -27,7 +27,6 @@ const movieCardDom = (movies) => {
 
 const getpopularTop20Moviews = async () => {
   const request = await fetch(`${API_URL}api_key=${MY_API_KEY}&language=ko-KR`);
-
   const { results } = await request.json();
 
   movieCardDom(results);
